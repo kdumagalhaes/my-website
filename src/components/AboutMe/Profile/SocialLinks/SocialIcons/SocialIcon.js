@@ -7,7 +7,7 @@ import {SocialIconLi} from './SocialIconStyles'
 const SocialIcon = ({url, children}) => {
     return (
         <SocialIconLi>
-            <a href={url}>{children}</a>
+            <a href={url} target="_blank" rel="noopener noreferrer">{children}</a>
         </SocialIconLi>
     )
 }

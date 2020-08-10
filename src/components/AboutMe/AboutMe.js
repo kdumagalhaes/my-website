@@ -8,7 +8,6 @@ const Header = () => {
         <AboutMeDiv>
             <TopMenu />
             <Profile/>
-
         </AboutMeDiv>
     )
 }

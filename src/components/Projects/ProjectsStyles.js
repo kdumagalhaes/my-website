@@ -30,6 +30,6 @@ export const GridDiv = styled.div `
   margin: 0 auto;  
   display: grid;
   grid-template-columns: repeat(4, 295px);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-rows: repeat(2, 200px);
   grid-gap: 20px;
 `
