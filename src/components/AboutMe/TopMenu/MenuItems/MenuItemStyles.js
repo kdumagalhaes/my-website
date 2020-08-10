@@ -13,11 +13,10 @@ export const MenuItemLi = styled.li`
     text-decoration: none;
     color: ${({ fontColor }) => fontColor};
     transition: color 0.3s;
-  margin-right: 20px;
-
+    margin-right: 20px;
 
     &:hover {
-      color: var(--light-blue)
+      color: var(--light-blue);
     }
   }
 `;
