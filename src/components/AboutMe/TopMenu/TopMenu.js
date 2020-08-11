@@ -14,7 +14,7 @@ const TopMenu = () => {
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink href="#contact">
+          <AnchorLink offset="-100" href="#contact">
             contact
           </AnchorLink>
         </li>
