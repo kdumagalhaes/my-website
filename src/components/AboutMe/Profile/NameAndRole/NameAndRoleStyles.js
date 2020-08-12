@@ -12,7 +12,7 @@ span {
     font-size: 1.6rem;
     color: var(--light-gray);
     display: block;
-    margin: -5px -10px 10px 0;
+    margin: 0 0 10px 0;
 }
 
 p {
@@ -20,5 +20,6 @@ p {
     max-width: 360px;
     font-size: 0.9rem;
     margin-bottom: 20px;
+    line-height: 23px;
 }
 `

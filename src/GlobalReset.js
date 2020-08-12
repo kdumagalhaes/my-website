@@ -23,12 +23,15 @@ const GlobalReset = createGlobalStyle`
     body {
         text-rendering: optimizeLegibility !important;
         -webkit-font-smoothing: antialiased !important;
-        font-family: "muli" ,sans-serif;
         font-weight: 400;
         font-style: normal;    
         color: var(--dark-gray);
         background-color: var(--lighter-blue);
         }
+
+    body, input, button, textarea {
+        font-family: "muli" ,sans-serif;
+    }    
 
     button {
         cursor: pointer;

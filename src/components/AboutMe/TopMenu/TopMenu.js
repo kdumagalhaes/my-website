@@ -9,7 +9,7 @@ const TopMenu = () => {
       <Logo textContent="kduMagalhães" />
       <TopNavUl>
         <li>
-          <AnchorLink href="#projects">
+          <AnchorLink offset="-270" href="#projects">
             projects
           </AnchorLink>
         </li>

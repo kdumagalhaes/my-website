@@ -9,14 +9,19 @@ export const ContactFormTag = styled.form`
     font-weight: 900;
   }
 
-  input {
+  input, textarea {
     width: 450px;
-    height: 60px;
     border-radius: 5px;
     border: 1px solid var(--lighter-blue);
-    padding-left: 20px;
     color: var(--light-gray);
     margin-bottom: 20px;
+    padding: 20px;
+    height: 120px;
+  }
+
+  input {
+    height: 60px;
+    padding-left: 20px;
 
     &:focus {
       border: 1px solid var(--primary-blue);
