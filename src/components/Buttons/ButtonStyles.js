@@ -12,6 +12,7 @@ export const ButtonTag = styled.button`
   font-size: 1.2rem;
   font-weight: bold;
   transition: all 0.3s;
+  margin: ${({margin}) => margin};
 
   &:hover {
     box-shadow: 0px 0px 15px rgba(10, 132, 255, 0.5);

@@ -1,17 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import GlobalReset from './GlobalReset';
-import AboutMe from './components/AboutMe/AboutMe';
-import Projects from './components/Projects/Projects';
-import ContactMe from './components/ContactMe/ContactMe';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Music from './pages/Music/Music';
 
 function App() {
   return (
-    <Fragment>
-      <AboutMe />
-      <Projects />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/music" component={Music} />
+      </Switch>
       <GlobalReset />
-      <ContactMe />
-    </Fragment>
+    </BrowserRouter>
   );
 }
 
