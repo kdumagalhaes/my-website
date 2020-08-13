@@ -34,6 +34,10 @@ export const ContactFormTag = styled.form`
     }
   }
 
+  textarea:focus {
+    border: 1px solid var(--primary-blue);
+  }
+
   @media (max-width: 375px) {
     width: 100%;
   }

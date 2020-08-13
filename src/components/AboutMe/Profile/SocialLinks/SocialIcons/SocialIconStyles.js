@@ -10,10 +10,11 @@ a {
     &:hover {
         color: var(--light-blue);
     }
+}
 
-    path {
-        padding-left: -20px;
+@media (max-width: 375px) {
+    a {
+        color: var(--lighter-blue);
     }
-
 }
 `

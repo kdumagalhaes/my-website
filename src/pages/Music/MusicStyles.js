@@ -17,6 +17,7 @@ export const MusicDiv = styled.div`
       text-decoration: none;
       font-weight: bold;
       color: var(--primary-blue);
+      transition: color 0.3s;
 
       &:hover {
         color: var(--light-blue);
