@@ -45,4 +45,7 @@ export const CardTag = styled.a`
       opacity: 0.5;
     }
   }
+
+  @media (max-width: 375px) {
+  }
 `;

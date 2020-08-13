@@ -5,6 +5,11 @@ export const ProjectsDiv = styled.div`
   width: 100%;
   height: 1000px;
   padding: var(--safe-area-padding);
+
+  @media (max-width: 375px) {
+    height: 100%;
+    margin-bottom: 80px;
+  }
 `;
 
 export const BackgroundDiv = styled.div`
@@ -16,20 +21,35 @@ export const BackgroundDiv = styled.div`
   background-image: url(${Illustration2});
   background-repeat: no-repeat;
 
+  @media (max-width: 375px) {
+    background-position: center;
+    background-position-y: 50px;
+    background-size: 300px;
+    height: 330px;
+
+  }
+
   h2 {
-      align-self: flex-end;
-      margin-left: auto;
-      font-weight: 900;
+    align-self: flex-end;
+    margin-left: auto;
+    font-weight: 900;
   }
 `;
 
-export const GridDiv = styled.div `
+export const GridDiv = styled.div`
   width: 100%;
   max-width: 1240px;
   height: 500px;
-  margin: 0 auto;  
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 295px);
   grid-template-rows: repeat(2, 200px);
   grid-gap: 20px;
-`
+
+  @media (max-width: 375px) {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 200px);
+    grid-row-gap: 20px;
+  }
+`;

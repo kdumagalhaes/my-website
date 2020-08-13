@@ -29,4 +29,8 @@ export const TopNavUl = styled.ul`
       }
     }
   }
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `;

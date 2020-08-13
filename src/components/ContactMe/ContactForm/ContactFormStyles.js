@@ -9,7 +9,8 @@ export const ContactFormTag = styled.form`
     font-weight: 900;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 450px;
     border-radius: 5px;
     border: 1px solid var(--lighter-blue);
@@ -17,6 +18,11 @@ export const ContactFormTag = styled.form`
     margin-bottom: 20px;
     padding: 20px;
     height: 120px;
+
+    @media (max-width: 375px) {
+      width: 100%;
+      border: 1px solid var(--primary-blue);
+    }
   }
 
   input {
@@ -28,7 +34,7 @@ export const ContactFormTag = styled.form`
     }
   }
 
-  .message {
-    height: 120px;
+  @media (max-width: 375px) {
+    width: 100%;
   }
 `;
