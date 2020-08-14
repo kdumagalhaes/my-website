@@ -17,33 +17,31 @@ export const ContactMeDiv = styled.div`
     padding-top: 60px
   }
 
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: 400px;
-    max-width: 1240px;
-    margin: 0 auto 40px;
-    position: relative;
-    top: 225px;
-
-    @media (max-width: 375px) {
-      position: static;
-      align-items: flex-start;
-
-      h2 {
-        color: var(--lighter-blue);
-      }
-    }
-
     h2 {
       margin-left: auto;
       margin-bottom: 40px;
       font-weight: 900;
     }
-  }
+
+`;
+
+export const FlexDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 400px;
+  max-width: 1240px;
+  margin: 0 auto 40px;
+  position: relative;
+  top: 225px;
 
   @media (max-width: 375px) {
+    position: static;
+    align-items: flex-start;
+
+    h2 {
+      color: var(--lighter-blue);
+    }
   }
 `;

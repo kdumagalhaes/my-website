@@ -2,11 +2,12 @@ import React from 'react';
 import { ContactFormTag } from './ContactFormStyles';
 import Button from '../../Buttons/Button';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from "react-google-recaptcha"
+
 
 const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         'gmail',
@@ -25,13 +26,24 @@ const ContactForm = () => {
   };
 
   return (
-    <ContactFormTag onSubmit={sendEmail}>
+    <ContactFormTag id="ContactForm" onSubmit={sendEmail} >
       <label htmlFor="name">Name</label>
-      <input type="text" placeholder="Your name..." name="from_name" />
+      <input type="text" placeholder="Your name..." name="from_name" required />
       <label htmlFor="email">email</label>
-      <input type="email" placeholder="Your email..." name="reply_to" />
-      <textarea placeholder="Your message..." height="240px" name="message_html" />
-      <Button textButton="sendMessage" />
+      <input
+        type="email"
+        placeholder="Your email..."
+        name="reply_to"
+        required
+      />
+      <textarea
+        placeholder="Your message..."
+        height="240px"
+        name="message_html"
+        required
+      />
+      <ReCAPTCHA sitekey="6Lca974ZAAAAAJtTg7_CoK-eA9VXralvjIlb2-Tv"/>
+      <Button margin="20px 0 60px 0" textButton="sendMessage" />
     </ContactFormTag>
   );
 };

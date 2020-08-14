@@ -21,6 +21,7 @@ export const ContactFormTag = styled.form`
 
     @media (max-width: 375px) {
       width: 100%;
+      height: auto;
       border: 1px solid var(--primary-blue);
     }
   }
@@ -36,6 +37,10 @@ export const ContactFormTag = styled.form`
 
   textarea:focus {
     border: 1px solid var(--primary-blue);
+  }
+
+  div {
+    margin: 0 auto;
   }
 
   @media (max-width: 375px) {
