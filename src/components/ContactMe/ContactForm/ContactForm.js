@@ -1,16 +1,39 @@
-import React from 'react'
-import {ContactFormTag} from './ContactFormStyles'
-import Button from '../../Buttons/Button'
+import React from 'react';
+import { ContactFormTag } from './ContactFormStyles';
+import Button from '../../Buttons/Button';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
-    return (
-        <ContactFormTag>
-            <input type="text" placeholder="Your name..."/>
-            <input type="email" placeholder="Your email..."/>
-            <textarea placeholder="Your message..." height="240px"/>
-            <Button textButton="sendMessage"/>
-        </ContactFormTag>
-    )
-}
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-export default ContactForm
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_o9emmeh9',
+        e.target,
+        'user_eJy9cWqvsK2R45FQKV6lV'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  return (
+    <ContactFormTag onSubmit={sendEmail}>
+      <label htmlFor="name">Name</label>
+      <input type="text" placeholder="Your name..." name="from_name" />
+      <label htmlFor="email">email</label>
+      <input type="email" placeholder="Your email..." name="reply_to" />
+      <textarea placeholder="Your message..." height="240px" name="message_html" />
+      <Button textButton="sendMessage" />
+    </ContactFormTag>
+  );
+};
+
+export default ContactForm;

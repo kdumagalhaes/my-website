@@ -5,8 +5,8 @@ export const ContactFormTag = styled.form`
   flex-direction: column;
 
   label {
-    margin-bottom: 10px;
-    font-weight: 900;
+    font-size: 1px;
+    color: var(--lighter-blue);
   }
 
   input,
