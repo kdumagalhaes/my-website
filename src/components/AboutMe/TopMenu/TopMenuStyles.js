@@ -27,6 +27,10 @@ export const TopNavUl = styled.ul`
       &:hover {
         color: var(--light-blue);
       }
+
+      @media (max-width: 900px) {
+        color: var(--dark-gray);
+      }
     }
   }
 

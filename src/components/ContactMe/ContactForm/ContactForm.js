@@ -2,8 +2,7 @@ import React from 'react';
 import { ContactFormTag } from './ContactFormStyles';
 import Button from '../../Buttons/Button';
 import emailjs from 'emailjs-com';
-import ReCAPTCHA from "react-google-recaptcha"
-
+import Recaptcha from 'react-google-invisible-recaptcha'
 
 const ContactForm = () => {
   const sendEmail = (e) => {
@@ -26,7 +25,12 @@ const ContactForm = () => {
   };
 
   return (
-    <ContactFormTag id="ContactForm" onSubmit={sendEmail} >
+    <ContactFormTag
+      id="ContactForm"
+      onSubmit={sendEmail}
+      action="?"
+      method="POST"
+    >
       <label htmlFor="name">Name</label>
       <input type="text" placeholder="Your name..." name="from_name" required />
       <label htmlFor="email">email</label>
@@ -42,8 +46,10 @@ const ContactForm = () => {
         name="message_html"
         required
       />
-      <ReCAPTCHA sitekey="6Lca974ZAAAAAJtTg7_CoK-eA9VXralvjIlb2-Tv"/>
-      <Button margin="20px 0 60px 0" textButton="sendMessage" />
+        <Recaptcha
+          sitekey="6LdyBL8ZAAAAANQbfgq-3QO2UtK9nFMIcljVS82E"
+          onResolved={ () => console.log( 'Human detected.' ) } />
+      <Button textButton="sendMessage" />
     </ContactFormTag>
   );
 };

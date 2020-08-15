@@ -10,6 +10,10 @@ export const ProjectsDiv = styled.div`
     height: 100%;
     margin-bottom: 80px;
   }
+
+  @media (max-width: 1024px) {
+    height: 1150px;
+  }
 `;
 
 export const BackgroundDiv = styled.div`
@@ -26,7 +30,6 @@ export const BackgroundDiv = styled.div`
     background-position-y: 50px;
     background-size: 300px;
     height: 330px;
-
   }
 
   h2 {
@@ -42,7 +45,7 @@ export const GridDiv = styled.div`
   height: 500px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 295px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 200px);
   grid-gap: 20px;
 
@@ -51,5 +54,9 @@ export const GridDiv = styled.div`
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 200px);
     grid-row-gap: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;

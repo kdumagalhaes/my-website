@@ -19,4 +19,8 @@ export const AboutMeDiv = styled.div`
     background-color: var(--primary-blue);
     height: 780px;
   }
+
+  @media (max-width: 1024px) {
+  background-position-x: 430px;
+  }
 `;

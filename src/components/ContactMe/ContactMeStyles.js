@@ -17,6 +17,14 @@ export const ContactMeDiv = styled.div`
     padding-top: 60px
   }
 
+  @media (max-width: 1024px) {
+    background-position-x: -580px;
+  }
+
+  @media (max-width: 768px) {
+
+  }
+  
     h2 {
       margin-left: auto;
       margin-bottom: 40px;
