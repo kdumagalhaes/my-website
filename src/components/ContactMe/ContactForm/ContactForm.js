@@ -2,7 +2,6 @@ import React from 'react';
 import { ContactFormTag } from './ContactFormStyles';
 import Button from '../../Buttons/Button';
 import emailjs from 'emailjs-com';
-import Recaptcha from 'react-google-invisible-recaptcha';
 
 const ContactForm = () => {
   const sendEmail = (e) => {
@@ -45,10 +44,6 @@ const ContactForm = () => {
         height="240px"
         name="message_html"
         required
-      />
-      <Recaptcha
-        sitekey="6LdyBL8ZAAAAANQbfgq-3QO2UtK9nFMIcljVS82E"
-        onResolved={() => console.log('Human detected.')}
       />
       <Button textButton="sendMessage" />
     </ContactFormTag>

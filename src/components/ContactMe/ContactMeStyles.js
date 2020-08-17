@@ -3,7 +3,7 @@ import Illustration3 from '../../assets/illustration-3.svg';
 
 export const ContactMeDiv = styled.div`
   width: 100%;
-  height: 800px;
+  height: 600px;
   padding: var(--safe-area-padding);
   background-image: url(${Illustration3});
   background-repeat: no-repeat;
