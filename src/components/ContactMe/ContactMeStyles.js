@@ -9,20 +9,9 @@ export const ContactMeDiv = styled.div`
   background-repeat: no-repeat;
   background-position-x: -480px;
 
-  @media (max-width: 375px) {
-    background-image: none;
-    background-color: var(--primary-blue);
-    height: 100%;
-    padding-bottom: 60px;
-    padding-top: 60px
-  }
 
   @media (max-width: 1024px) {
     background-position-x: -580px;
-  }
-
-  @media (max-width: 768px) {
-
   }
   
     h2 {
@@ -31,6 +20,13 @@ export const ContactMeDiv = styled.div`
       font-weight: 900;
     }
 
+    @media (max-width: 375px) {
+    background-image: none;
+    background-color: var(--primary-blue);
+    height: 100%;
+    padding-bottom: 60px;
+    padding-top: 60px
+  }
 `;
 
 export const FlexDiv = styled.div`
@@ -41,12 +37,9 @@ export const FlexDiv = styled.div`
   height: 400px;
   max-width: 1240px;
   margin: 0 auto 40px;
-  position: relative;
-  top: 225px;
+
 
   @media (max-width: 375px) {
-    position: static;
-    align-items: flex-start;
 
     h2 {
       color: var(--lighter-blue);

@@ -6,13 +6,13 @@ export const ProjectsDiv = styled.div`
   height: 1000px;
   padding: var(--safe-area-padding);
 
+  @media (max-width: 1024px) {
+    height: 1150px;
+  }
+
   @media (max-width: 375px) {
     height: 100%;
     margin-bottom: 80px;
-  }
-
-  @media (max-width: 1024px) {
-    height: 1150px;
   }
 `;
 
@@ -49,14 +49,15 @@ export const GridDiv = styled.div`
   grid-template-rows: repeat(2, 200px);
   grid-gap: 20px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media (max-width: 375px) {
     height: auto;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: repeat(8, 200px);
     grid-row-gap: 20px;
   }
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 `;
