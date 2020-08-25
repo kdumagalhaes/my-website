@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const ButtonTag = styled.button`
   width: 100%;
   max-width: ${({ maxWidth }) => maxWidth};
-  background-color: var(--lighter-blue);
+  background-color: ${({backgroundColor}) => backgroundColor};
   border-radius: 5px;
   height: 50px;
   border: none;
   box-shadow: 0px 0px 55px rgba(10, 132, 255, 0.3);
-  color: var(--primary-blue);
+  color: ${({textColor}) => textColor};
   font-size: 1.2rem;
   font-weight: bold;
   transition: all 0.3s;
