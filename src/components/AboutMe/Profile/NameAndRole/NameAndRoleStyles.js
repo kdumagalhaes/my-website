@@ -3,14 +3,6 @@ import styled from 'styled-components';
 export const NameAndRoleDiv = styled.div`
   width: 100%;
 
-  @media (max-width: 375px) {
-    margin-top: 320px;
-
-    h1, p {
-      color: var(--lighter-blue);
-    }
-  }
-
   h1 {
     font-size: 2.2rem;
     font-weight: 900;
@@ -29,5 +21,32 @@ export const NameAndRoleDiv = styled.div`
     font-size: 0.9rem;
     margin-bottom: 20px;
     line-height: 23px;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      max-width: 300px;
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 320px;
+
+    h1,
+    p {
+      color: var(--lighter-blue);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
   }
 `;

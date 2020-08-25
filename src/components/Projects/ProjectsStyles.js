@@ -7,7 +7,7 @@ export const ProjectsDiv = styled.div`
   padding: var(--safe-area-padding);
 
   @media (max-width: 1024px) {
-    height: 1150px;
+    height: 1400px;
   }
 
   @media (max-width: 375px) {
@@ -59,5 +59,4 @@ export const GridDiv = styled.div`
     grid-template-rows: repeat(8, 200px);
     grid-row-gap: 20px;
   }
-
 `;

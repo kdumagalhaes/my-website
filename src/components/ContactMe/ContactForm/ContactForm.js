@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ContactFormTag } from './ContactFormStyles';
 import Button from '../../Buttons/Button';
 import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
+  const [confirmation, setConfirmation] = useState("nao clicado")
+  console.log(confirmation)
+
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -45,7 +49,7 @@ const ContactForm = () => {
         name="message_html"
         required
       />
-      <Button textButton="sendMessage" />
+      <Button textButton="sendMessage"/>
     </ContactFormTag>
   );
 };

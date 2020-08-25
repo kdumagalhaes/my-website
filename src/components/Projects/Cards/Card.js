@@ -36,7 +36,7 @@ const Card = ({ repo }) => {
       </p>
       <div>
         <span>{language}</span>
-        <Icon icon={linkIcon} color="#0A84FF" width="20" />
+        <Icon icon={linkIcon} color="#0A84FF" width="20"/>
       </div>
     </CardTag>
   );

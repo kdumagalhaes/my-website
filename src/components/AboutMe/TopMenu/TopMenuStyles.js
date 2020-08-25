@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const TopNav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-content: center;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
@@ -10,6 +11,9 @@ export const TopNav = styled.nav`
 `;
 
 export const TopNavUl = styled.ul`
+  display: flex;
+  align-items: center;
+
   li {
     display: inline-block;
     margin-right: 35px;
@@ -30,6 +34,10 @@ export const TopNavUl = styled.ul`
 
       @media (max-width: 900px) {
         color: var(--dark-gray);
+      }
+
+      @media (max-width: 768px) {
+        color: var(--lighter-blue);
       }
     }
   }
