@@ -27,6 +27,7 @@ const GlobalReset = createGlobalStyle`
         font-style: normal;    
         color: ${({theme}) => theme.colors.color4};
         background-color: ${({theme}) => theme.colors.color1};
+        transition: all 0.3s linear;
         }
 
     body, input, button, textarea {

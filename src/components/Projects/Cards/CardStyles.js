@@ -6,8 +6,8 @@ export const CardTag = styled.a`
   padding: 20px;
   width: 100%;
   height: 200px;
-  background-color: ${({theme}) => theme.colors.color1};
-  box-shadow: 0px 0px 87px -46px rgba(10, 132, 255, 0.5);
+  background-color: ${({theme}) => theme.colors.cardColor};
+  box-shadow: 0px 0px 87px -46px ${({theme}) => theme.colors.cardShadow};
   border-radius: 5px;
   transition: all 0.3s;
   cursor: pointer;
@@ -26,7 +26,7 @@ export const CardTag = styled.a`
   &:hover {
     box-shadow: none;
     transform: scale(1.05);
-    border: 1px solid var(--primary-blue);
+    border: 1px solid ${({theme}) => theme.colors.color2};
   }
 
   div {
@@ -40,8 +40,8 @@ export const CardTag = styled.a`
       padding: 5px;
       font-size: 0.65rem;
       border-radius: 5px;
-      color: var(--lighter-blue);
-      background-color: var(--primary-blue);
+      color: ${({theme}) => theme.colors.color1};
+      background-color: ${({theme}) => theme.colors.color2};
       opacity: 0.5;
     }
   }
