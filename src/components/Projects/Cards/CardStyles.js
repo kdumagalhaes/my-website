@@ -6,7 +6,7 @@ export const CardTag = styled.a`
   padding: 20px;
   width: 100%;
   height: 200px;
-  background-color: var(--lighter-blue);
+  background-color: ${({theme}) => theme.colors.color1};
   box-shadow: 0px 0px 87px -46px rgba(10, 132, 255, 0.5);
   border-radius: 5px;
   transition: all 0.3s;
@@ -15,11 +15,11 @@ export const CardTag = styled.a`
 
   h3 {
     margin-bottom: 15px;
-    color: var(--primary-blue);
+    color: ${({theme}) => theme.colors.color2};
   }
 
   p {
-    color: var(--dark-gray);
+    color: ${({theme}) => theme.colors.color4};
     font-size: 0.95rem;
   }
 

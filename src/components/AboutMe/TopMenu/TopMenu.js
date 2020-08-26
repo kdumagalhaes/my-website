@@ -2,9 +2,9 @@ import React from 'react';
 import { TopNav, TopNavUl } from './TopMenuStyles';
 import Logo from '../Logo/Logo';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Toggle from './Toggle/Toggle'
+import Toggle from './Toggle/Toggle';
 
-const TopMenu = () => {
+const TopMenu = ({ toggleTheme, setTheme }) => {
   return (
     <TopNav>
       <Logo textContent="kduMagalhães" />
@@ -20,7 +20,7 @@ const TopMenu = () => {
           </AnchorLink>
         </li>
         <li>
-          <Toggle/>
+          <Toggle toggleTheme={toggleTheme} setTheme={setTheme} />
         </li>
       </TopNavUl>
     </TopNav>

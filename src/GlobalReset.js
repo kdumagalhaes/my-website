@@ -25,8 +25,8 @@ const GlobalReset = createGlobalStyle`
         -webkit-font-smoothing: antialiased !important;
         font-weight: 400;
         font-style: normal;    
-        color: var(--dark-gray);
-        background-color: var(--lighter-blue);
+        color: ${({theme}) => theme.colors.color4};
+        background-color: ${({theme}) => theme.colors.color1};
         }
 
     body, input, button, textarea {

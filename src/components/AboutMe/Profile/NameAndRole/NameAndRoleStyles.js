@@ -10,7 +10,7 @@ export const NameAndRoleDiv = styled.div`
 
   span {
     font-size: 1.6rem;
-    color: var(--light-gray);
+    color: ${({theme}) => theme.colors.color5};
     display: block;
     margin: 0 0 10px 0;
   }
@@ -42,7 +42,7 @@ export const NameAndRoleDiv = styled.div`
 
     h1,
     p {
-      color: var(--lighter-blue);
+      color: ${({theme}) => theme.colors.color1};
     }
 
     h1 {

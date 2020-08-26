@@ -4,7 +4,7 @@ import Button from '../../Buttons/Button';
 import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
-  const [confirmation, setConfirmation] = useState("sendMessage")
+  const [confirmation, setConfirmation] = useState('sendMessage');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setConfirmation('Email sent!')
+          setConfirmation('Email sent!');
         },
         (error) => {
           console.log(error.text);
@@ -48,7 +48,17 @@ const ContactForm = () => {
         name="message_html"
         required
       />
-      <Button backgroundColor={confirmation === 'Email sent!' ?  '#c6ff03' : 'var(--primary-blue)'} textColor={confirmation === 'Email sent!' ?  'var(--dark-gray)' : 'var(--lighter-blue)'} textButton={confirmation}/>
+      <Button
+        backgroundColor={
+          confirmation === 'Email sent!' ? '#c6ff03' : 'var(--primary-blue)'
+        }
+        textColor={
+          confirmation === 'Email sent!'
+            ? 'var(--dark-gray)'
+            : 'var(--lighter-blue)'
+        }
+        textButton={confirmation}
+      />
     </ContactFormTag>
   );
 };

@@ -19,4 +19,9 @@ export const ButtonTag = styled.button`
     background-color: var(--primary-blue);
     color: var(--lighter-blue);
   }
+
+  @media (max-width: 375px) {
+    background-color: var(--lighter-blue);
+    color: var(--primary-blue);
+  }
 `;

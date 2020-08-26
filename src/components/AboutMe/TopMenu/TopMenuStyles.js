@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TopNav = styled.nav`
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
