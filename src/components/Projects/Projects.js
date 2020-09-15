@@ -13,10 +13,10 @@ const Projects = () => {
         </h2>
       </BackgroundDiv>
       <GridDiv>
-        <Card repo="social-media-dashboard-reactjs" />
+        <Card repo="winelist" />
         <Card repo="the-book-finder" />
         <Card repo="fylo-landing-page-reactjs" />
-        <Card repo="todo-reactjs" />
+        <Card repo="social-media-dashboard-reactjs" />
         <Card repo="pricing-component-reactjs" />
         <Card repo="data-storage-front-end" />
         <Card repo="my-website" />
