@@ -10,7 +10,7 @@ export const ProjectsDiv = styled.div`
     height: 1400px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     height: 100%;
     margin-bottom: 80px;
   }
@@ -25,7 +25,7 @@ export const BackgroundDiv = styled.div`
   background-image: url(${Illustration2});
   background-repeat: no-repeat;
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     background-position: center;
     background-position-y: 50px;
     background-size: 300px;
@@ -53,7 +53,7 @@ export const GridDiv = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     height: auto;
     grid-template-columns: auto;
     grid-template-rows: repeat(8, 200px);
