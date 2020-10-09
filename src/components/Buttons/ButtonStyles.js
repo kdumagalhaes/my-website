@@ -22,7 +22,7 @@ export const ButtonTag = styled.button`
     color: var(--lighter-blue);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     background-color: var(--lighter-blue);
     color: var(--primary-blue);
   }

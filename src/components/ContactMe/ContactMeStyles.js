@@ -24,7 +24,7 @@ export const ContactMeDiv = styled.div`
     background-position-x: -320px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     background-image: none;
     background-color: var(--primary-blue);
     height: 100%;
@@ -42,7 +42,7 @@ export const FlexDiv = styled.div`
   max-width: 1240px;
   margin: 0 auto 40px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     h2 {
       color: var(--lighter-blue);
     }

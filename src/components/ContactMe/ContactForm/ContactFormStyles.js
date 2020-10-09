@@ -19,7 +19,7 @@ export const ContactFormTag = styled.form`
     padding: 20px;
     height: 120px;
 
-    @media (max-width: 375px) {
+    @media (max-width: 411px) {
       width: 100%;
       border: 1px solid var(--primary-blue);
     }
@@ -46,7 +46,7 @@ export const ContactFormTag = styled.form`
     height: 800px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     width: 100%;
     height: 800px;
   }
