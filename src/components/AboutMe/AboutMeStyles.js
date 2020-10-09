@@ -24,7 +24,7 @@ export const AboutMeDiv = styled.div`
     height: 780px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     background-image: url(${Illustration1Mobile});
     background-size: 250px;
     background-position: center;

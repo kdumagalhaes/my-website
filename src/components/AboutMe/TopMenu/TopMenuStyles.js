@@ -42,7 +42,7 @@ export const TopNavUl = styled.ul`
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     display: none;
   }
 `;

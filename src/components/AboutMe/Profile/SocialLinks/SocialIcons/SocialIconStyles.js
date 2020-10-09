@@ -12,7 +12,7 @@ a {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 411px) {
     a {
         color: var(--lighter-blue);
     }

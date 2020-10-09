@@ -5,7 +5,7 @@ export const LogoH1 = styled.h1`
   font-weight: 900;
   color: ${({theme}) => theme.colors.color4};
 
-  @media (max-width: 375px) {
+  @media (max-width: 411px) {
     display: none;
   }
 `;
